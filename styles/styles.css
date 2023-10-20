@@ -16,7 +16,7 @@ body{
     max-width: 325px;
     max-height: 400px;
     aspect-ratio: initial;
-    filter: drop-shadow(black .5rem .5rem 5px);
+    filter: drop-shadow(.5rem .5rem 5px black);
     overflow: visible;
 }
 
