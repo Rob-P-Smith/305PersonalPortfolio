@@ -1,0 +1,15 @@
+#nav-top, #nav-bottom {
+    background-image: linear-gradient(to right, lightslategray , darkgrey);
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-color: black;
+}
+
+
+#nav-top nav a {
+    color: aliceblue;
+}
+
+#nav-top nav a:hover{
+    color: coral;
+}
