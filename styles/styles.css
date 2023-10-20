@@ -1,15 +1,42 @@
+body{
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/mooning.png");
+}
+
 #nav-top, #nav-bottom {
-    background-image: linear-gradient(to right, lightslategray , darkgrey);
-    border-bottom: 1px;
+    background-image: linear-gradient(to right, lightslategray, darkgrey);
+    border-bottom: 2px;
+    border-top: 2px;
+    border-top-style: solid;
     border-bottom-style: solid;
     border-color: black;
 }
 
+#myPic{
+    max-width: 325px;
+    max-height: 400px;
+    aspect-ratio: initial;
+    filter: drop-shadow(black .5rem .5rem 5px);
+    overflow: visible;
+}
 
-#nav-top nav a {
+#nav-top a {
     color: aliceblue;
 }
 
-#nav-top nav a:hover{
+#nav-top a:hover{
     color: coral;
+}
+
+.dropdown-menu{
+    background-color: lightslategrey;
+    border: solid 1px black;
+}
+
+.dropdown-menu :hover{
+    background:transparent;
+}
+
+.offcanvas {
+    background-image: linear-gradient(to right, lightslategray, darkgrey)
 }

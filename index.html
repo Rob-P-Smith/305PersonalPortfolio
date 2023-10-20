@@ -10,88 +10,124 @@
 </head>
 <body>
 
-
-<nav class="navbar bg-light fixed-top" id="nav-top">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Rob's Portfolio</a>
-        <nav class="nav mx-1">
-            <a class="nav-link d-none d-md-block" href="pages/cover.html">Cover Letter</a>
-            <a class="nav-link d-none d-md-block" href="pages/resume.html">Resume</a>
-            <a class="nav-link d-none d-md-block" href="https://www.linkedin.com/in/robert-patrick-smith-">Linked In</a>
-            <a class="nav-link d-none d-md-block" href="pages/contact.html">Contact</a>
-        </nav>
-        <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Locations</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+<header>
+    <nav class="navbar bg-light fixed-top" id="nav-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Rob's Portfolio</a>
+            <div class="nav mx-1 d-none d-md-flex">
+                <div class="dropdown-menu-end dropstart">
+                    <a class="nav-link btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Projects
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a class="dropdown-item" href="/projects/librarian_dash.html">Librarian's
+                            Dashboard</a>
+                        </li>
+                        <li><a class="dropdown-item" href="/projects/java_Algos.html">Java Algorithm
+                            Projects</a>
+                        </li>
+                        <li><a class="dropdown-item" href="/projects/web_projects.html">Web Dev Projects</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="/projects/arduinoItems.html">Microcontroller
+                            Projects</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="nav-link d-none d-md-block" href="pages/cover.html">Cover Letter</a>
+                <a class="nav-link d-none d-md-block" href="pages/resume.html">Resume</a>
+                <a class="nav-link d-none d-md-block" href="https://www.linkedin.com/in/robert-patrick-smith-"
+                   target="_blank">Linked
+                    In</a>
+                <a class="nav-link d-none d-md-block" href="pages/contact.html" target="_blank">Contact</a>
             </div>
-            <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-4 pe-1">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                           aria-expanded="false">
-                            Projects
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/projects/librarian_dash.html">Librarian's Dashboard</a>
-                            </li>
-                            <li><a class="dropdown-item" href="/projects/java_Algos.html">Java Algorithm Projects</a>
-                            </li>
-                            <li><a class="dropdown-item" href="/projects/web_projects.html">Web Dev Projects</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="/projects/arduinoItems.html">Microcontroller Projects</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/cover.html">Cover Letter</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/resume.html">Resume</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page"
-                           href="https://www.linkedin.com/in/robert-patrick-smith-">Linked In</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/contact.html">Contact Rob</a>
-                    </li>
-                </ul>
+
+
+            <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                 aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Locations</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-4 pe-1">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                Projects
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/projects/librarian_dash.html">Librarian's
+                                    Dashboard</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/projects/java_Algos.html">Java Algorithm
+                                    Projects</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/projects/web_projects.html">Web Dev Projects</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="/projects/arduinoItems.html">Microcontroller
+                                    Projects</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/cover.html">Cover Letter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/resume.html">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                               href="https://www.linkedin.com/in/robert-patrick-smith-">Linked In</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/contact.html">Contact Rob</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-</nav>
+    </nav>
+</header>
 
 <div class="container mt-5 pt-3">
-    <div class="row justify-content-center justify-content-md-evenly" style="overflow: hidden;">
-        <img class="col-6 col-md-4 mb-2" src="/images/me.png" alt="Picture of Rob Smith">
+    <div class="row justify-content-center justify-content-md-around" style="overflow: hidden;">
+        <img class="col-12 col-md-6 col-lg-4 img-fluid mb-3" src="/images/me.png" alt="Picture of Rob Smith" id="myPic">
 
-        <article class="col-12 col-md-8 card">
-            <div class="card-body text-left align-bottom">
-                <p>I am a 3rd year student in the Green River College Software Development BAS program expecting to
+        <article class="col-12 col-md-12 col-lg-8 card">
+            <div class="card-body text-left d-inline-block">
+                <p class="align-bottom">I am a 3rd year student in the Green River College Software Development BAS
+                    program expecting to
                     graduate in June 2025. My passion for technology started young; my first PC was an Apple IIc. It led
                     to a long journey down many esoteric rabbit holes such as competitive overclocking, 3d modeling, and
                     others.</p>
                 <hr>
-                <p>I am a retired Army veteran with 21 years of service; 5 years deployed to various locations. I've
+                <p class="align-bottom">I am a retired Army veteran with 21 years of service; 5 years deployed to
+                    various locations. I've
                     worked at all levels of the Intelligence field, tactical, operational, and strategic. Some of my
                     time was spent running regionally aligned programs in direct support of USSTRATCOM. My final
                     position was mentoring National Guard and Reserve Intelligence teams to better prepare them for
                     contingency operations.</p>
                 <hr>
-                <p>When I'm not working on school assignments and projects, I spend my time working on custom
+                <p class="align-bottom">When I'm not working on school assignments and projects, I spend my time working
+                    on custom
                     microcontroller installations and custom motorcycle design/fabrication projects. I have a small 3D
                     printer farm of 8 machines I use for personal projects and to support local Makers.</p>
             </div>
         </article>
     </div>
 </div>
+
 <footer class="mt-4">
     <nav class="navbar fixed-bottom" id="nav-bottom">
         <div class="container justify-content-evenly g-0 d-none d-md-block">
