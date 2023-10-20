@@ -9,13 +9,14 @@
     <title>Rob's Resume</title>
 </head>
 <body>
-<header>
+<header class="pb-5">
     <nav class="navbar bg-light fixed-top" id="nav-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">Rob's Portfolio</a>
             <div class="nav mx-1 d-none d-md-flex">
                 <div class="dropdown-menu-end dropstart">
-                    <a class="nav-link btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    <a class="nav-link btn btn-secondary dropdown-toggle" href="#" role="button"
+                       data-bs-toggle="dropdown"
                        aria-expanded="false">
                         Projects
                     </a>
@@ -97,98 +98,208 @@
             </div>
         </div>
     </nav>
-</header>'
+</header>
+'
 
-<div class="container" id="content-area">
+<div class="container pb-1" id="content-area">
 
-    <div class="d-flex row  pt-5">
+    <div class="d-flex row">
         <div class="col-sm-12 col-lg-9 p-2"><h1 class="text-left fw-semibold">Robert P Smith</h1></div>
-    </div>
-    <div class="line-2"></div>
-
-    <div class=" pt-2">
-        <h3><u>Summary</u></h3>
-
-        <p>Enthusiastic Developer located in Olympia, looking for a full-time position creating complex applications in
-            a dynamic and challenging environment. </p>
+        <hr>
     </div>
 
-    <div>
-        <h3><u>SKills and Certifications</u></h3>
-        <ul>
-            <li>Languages: Java, PHP, SQL, JavaScript, C++, Rust, C#, Zig</li>
-            <li>Web: HTML/CSS, Bootstrap, jQuery, React</li>
-            <li>Army certifications in small group leadership, instructor/trainer positions</li>
-            <li>Agile: scrum master, pair programming, working in sprints</li>
-            <li>Tools: Git, JetBrains IDEs, Visual Studio Code, DCGS, Palantir, SIPR, JWICS</li>
-        </ul>
+
+    <div class="accordion mb-4" id="resumeAccordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button show" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <u>Summary</u>
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                 data-bs-parent="#resumeAccordion">
+                <div class="accordion-body">
+                    <div class="pt-2">
+                        <p>Enthusiastic Developer located in Olympia, looking for a full-time position creating complex
+                            applications in a dynamic and challenging environment. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button show" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <u>SKills and Certifications</u>
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
+                 data-bs-parent="#resumeAccordion">
+                <div class="accordion-body">
+                    <div>
+                        <ul>
+                            <li>Languages: Java, PHP, SQL, JavaScript, C++, Rust, C#, Zig</li>
+                            <li>Web: HTML/CSS, Bootstrap, jQuery, React, htmx, JSON, REST</li>
+                            <li>Agile: scrum master, pair programming, working in sprints</li>
+                            <li>Tools: Git, JetBrains IDEs, Visual Studio Code, DCGS, Palantir, SIPR, JWICS</li>
+                            <li>Army certifications in small group leadership, instructor/trainer positions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button show" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <u>Projects and Achievements</u>
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree"
+                 data-bs-parent="#resumeAccordion">
+                <div class="accordion-body">
+                    <div>
+                        <ul>
+                            <li>Implemented statistical analysis dashboard for Green River College librarians to improve
+                                the efficacy of
+                                lectures
+                            </li>
+                            <li>Numerous complex JAVA applications</li>
+                            <li>Hold multiple world records in PC overclocking</li>
+                            <li>Highly decorated veteran recognized for leadership ability under pressure in extreme
+                                circumstances
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button show" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <u>Education</u>
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour"
+                 data-bs-parent="#resumeAccordion">
+                <div class="accordion-body">
+                    <div>
+                        <ul>
+                            <li>
+                                <div class="row">
+                                    <p class="col-12 col-md-8 col-xl-10">Bachelor of Applied Science, Software
+                                        Development<br>Green
+                                        River College, Auburn
+                                        WA</p>
+                                    <p class="text-md-end col-4 col-md-4 col-xl-2">2023-Current</p>
+                                </div>
+                            </li>
+                            <hr>
+                            <li>
+                                <div class="row">
+                                    <p class="col-12 col-md-8 col-xl-10">Associates of Applied Science, Software
+                                        Development, and Data
+                                        Analysis<br>Green River College, Auburn WA <em>Magna Cum Laude</em></p>
+                                    <p class="text-md-end col-4 col-md-4 col-xl-2">2021-2023</p>
+                                </div>
+                            </li>
+                            <hr>
+                            <li>
+                                <div class="row"><p class="col-12 col-md-8 col-xl-10">Senior Leaders Course<br>US Army
+                                    NCO Academy Ft
+                                    Huachuca</p>
+                                    <p class="text-md-end col-4 col-md-4 col-xl-2">2017</p></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item mb-4">
+            <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button show" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    <u>Experience</u>
+                </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse show" aria-labelledby="headingFive"
+                 data-bs-parent="#resumeAccordion">
+                <div class="accordion-body">
+                    <div class="row">
+                        <p class="col-12 col-md-8 col-xl-10">Senior All-Source Intelligence Analyst(Strategic Level)</p>
+                        <p class="col-4 col-xl-2 text-md-end">2016-2022</p>
+                    </div>
+                    <ul>
+                        <li>Performed daily analysis of geopolitics in direct support of General Officers and
+                            USGOV
+                            elected
+                            officials
+                        </li>
+                        <li>Scope included 57 countries, 5 nuclear-armed nations, 4.4 billion people, and more
+                            than
+                            50% of the
+                            planet
+                        </li>
+                        <li>Prioritized and coordinated national-level collections, compiled daily situation
+                            reports
+                            and special
+                            response reports as required using advanced analytic software across all classified
+                            enclaves
+                        </li>
+                    </ul>
+                    <hr>
+                    <div class="row">
+                        <p class="col-12 col-md-8 col-xl-10">General Manager of Automotive Division/Quality Assurance
+                            Manager for Aerospace
+                            Division</p>
+                        <p class="col-4 col-xl-2 text-md-end">2007-2008</p>
+                    </div>
+                    <ul>
+                        <li>PDeveloped products, scheduled production, and ensured quality assurance for a large
+                            portfolio of
+                            items
+                        </li>
+                        <li>Coordinated all aspects of daily operations for 20 employees in a
+                            multimillion-dollar
+                            business
+                        </li>
+                        <li>Earned ISO 9001/9100 preferential vendor status for Carbon by Design with multiple
+                            government agencies
+                            by implementing JIT logistics practices and Six Sigma processes
+                        </li>
+                    </ul>
+                    <hr>
+                    <div class="row">
+                        <p class="col-12 col-md-8 col-xl-10">Nuclear, Biological, and Chemical Defense Specialist
+                            (Tactical Level)</p>
+                        <p class="col-4 col-xl-2 text-md-end">2000-2007</p>
+                    </div>
+                    <ul>
+                        <li>Counter Terrorism specialist with emphasis on supporting theatre-wide radar defense
+                            operations
+                        </li>
+                        <li>Enabled Iraq and Afghan national elections by providing predictive analysis and
+                            precise
+                            targeting
+                        </li>
+                        <li>Led more than 450 missions, and participated in over 800 with zero casualties</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div>
-        <h3><u>Projects and Achievements</u></h3>
-        <ul>
-            <li>Implemented statistical analysis dashboard for Green River College librarians to improve the efficacy of
-                lectures
-            </li>
-            <li>Numerous complex JAVA applications</li>
-            <li>Hold multiple world records in PC overclocking</li>
-            <li>Highly decorated veteran recognized for leadership ability under pressure in extreme circumstances</li>
-        </ul>
-    </div>
-
-    <div>
-        <h3><u>Education</u></h3>
-        <ul>
-            <li>
-                <p>Bachelor of Applied Science, Software Development<br>Green River College, Auburn WA</p>
-            </li>
-            <li>
-                <p>Associates of Applied Science, Software Development, and Data Analysis<br>Green River College, Auburn
-                    WA</p></li>
-            <li><p>Senior Leaders Course<br>US Army NCO Academy Ft Huachuca</p></li>
-        </ul>
-    </div>
-
-    <div>
-        <h3><u>Experience</u></h3>
-        <p>Senior All-Source Intelligence Analyst(Strategic Level)</p>
-        <ul>
-            <li>Performed daily analysis of geopolitics in direct support of General Officers and USGOV elected
-                officials
-            </li>
-            <li>Scope included 57 countries, 5 nuclear-armed nations, 4.4 billion people, and more than 50% of the
-                planet
-            </li>
-            <li>Prioritized and coordinated national-level collections, compiled daily situation reports and special
-                response reports as required using advanced analytic software across all classified enclaves
-            </li>
-        </ul>
-        <p>General Manager of Automotive Division/Quality Assurance Manager for Aerospace Division</p>
-        <ul>
-            <li>PDeveloped products, scheduled production, and ensured quality assurance for a large portfolio of
-                items
-            </li>
-            <li>Coordinated all aspects of daily operations for 20 employees in a multimillion-dollar business</li>
-            <li>Earned ISO 9001/9100 preferential vendor status for Carbon by Design with multiple government agencies
-                by implementing JIT logistics practices and Six Sigma processes
-            </li>
-        </ul>
-        <p>Nuclear, Biological, and Chemical Defense Specialist (Tactical Level)</p>
-        <ul>
-            <li>Counter Terrorism specialist with emphasis on supporting theatre-wide radar defense operations</li>
-            <li>Enabled Iraq and Afghan national elections by providing predictive analysis and precise targeting</li>
-            <li>Led more than 450 missions, and participated in over 800 with zero casualties</li>
-        </ul>
-    </div>
 
 </div>
 
-<footer class="mt-4">
+<footer class="pt-5">
     <nav class="navbar fixed-bottom" id="nav-bottom">
         <div class="container justify-content-evenly g-0 d-none d-md-block">
-            <p><em>I need you to think of solutions to problems we haven’t seen yet. I want
-                you to try things that no one has ever tried because they’re absolutely stupid.</em> - <b>Ender Wiggins
-                from Ender's Game</b>
+            <p class="text-center"><em>It is possible to commit no mistakes and still lose. That is not weakness, that
+                is life.</em> - <b>Jean Luc Picard
+                STtNG</b>
             </p>
         </div>
     </nav>
