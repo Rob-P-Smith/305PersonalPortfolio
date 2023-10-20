@@ -40,3 +40,7 @@ body{
 .offcanvas {
     background-image: linear-gradient(to right, lightslategray, darkgrey)
 }
+
+#content-area{
+    background-color: lightgray;
+}
