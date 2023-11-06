@@ -10,13 +10,19 @@ body{
 #nav-top, #nav-bottom {
     background-image: linear-gradient(to right, black, #252525);
 }
-#nav-top a {
+#nav-top a{
     color: lightslategrey;
+}
+#nav-top button {
+    color: lightslategrey;
+}
+#nav-top button:hover{
+    color:white;
 }
 #nav-top a:hover{
     color: white;
 }
-#projectsDropdown:hover{
+.projectsDropdown:hover{
     background-color: transparent;
 }
 #burger-icon{
@@ -29,24 +35,26 @@ body{
 .dropdown-menu :hover{
     background:transparent;
 }
-/*OFFCANVAS NAVBAR*/
-#offcanvasClose{
-    color: lightslategrey;
-    background: transparent;
-}
-#offcanvasClose:hover{
-    box-shadow: none;
-    border-color: rgba(0,0,0,.125);
-}
-.offcanvas {
-    color: lightslategrey;
-    background-image: linear-gradient(to right, #252525, black)
-}
-.offcanvas a:hover{
-    color: white;
-}
 .navbar-toggler{
     color: transparent;
+}
+.modal-backdrop{
+    z-index:1020;
+}
+.modal-content{
+    color: whitesmoke;
+    background-color: #252525;
+}
+.modal-button{
+    background-color: black;
+    color: whitesmoke;
+}
+.modal-button:hover{
+    color:black;
+    background-color:#454545;
+}
+.formFieldStyles{
+    background-color: dimgray;
 }
 
 /*****INDEX PAGE*****/
@@ -58,9 +66,11 @@ body{
     overflow: visible;
 }
 .textCard{
-    opacity: .5;
+    opacity: .75;
     border-radius: 12px;
     font-size: 16px;
+    background-color:black;
+    color:whitesmoke;
 }
 .card-body{
     padding: 5px 1px 5px 1px;
@@ -76,11 +86,6 @@ body{
 }
 .picCard img{
     border-radius: 12px;
-}
-
-/*****CONTACT PAGE*****/
-#contactFormContainer :focus{
-    box-shadow: none;
 }
 
 /*****RESUME PAGE*****/
