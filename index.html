@@ -43,9 +43,6 @@
                             </button>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="https://github.com/tcclaviger/javatoyapps" target="_blank">Java Projects (github)</a>
-                        </li>
-                        <li>
                             <button class="nav-link d-none d-md-block"
                                     name="actionTrigger"
                                     type="submit"
@@ -57,12 +54,16 @@
                                 Web Projects
                             </button>
                         </li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="https://github.com/tcclaviger/ChillerControl/blob/main/ChillerControl%20v1" target="_blank">Microcontroller
-                            Projects (github)</a>
-                        </li>
+                        <button class="dropdown-item"
+                                name="actionTrigger"
+                                type="submit"
+                                hx-post="PHP/control.php"
+                                hx-target="#page_contents"
+                                hx-swap="outerHTML"
+                                value="GitProjects"
+                        >
+                            GitHub Hosted Projects
+                        </button>
                     </ul>
                 </div>
 
@@ -71,7 +72,7 @@
                         <a class="nav-link btn btn-secondary dropdown-toggle projectsDropdown" href="#" role="button"
                            data-bs-toggle="dropdown"
                            aria-expanded="false">
-                            Projects
+                            Navigation
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li>
@@ -102,9 +103,6 @@
                                 </button>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="https://github.com/tcclaviger/javatoyapps" target="_blank">Java Projects (github)</a>
-                            </li>
-                            <li>
                                 <button class="dropdown-item"
                                     name="actionTrigger"
                                     type="submit"
@@ -117,11 +115,26 @@
                                 </button>
                             </li>
                             <li>
+                                <button class="dropdown-item"
+                                        name="actionTrigger"
+                                        type="submit"
+                                        hx-post="PHP/control.php"
+                                        hx-target="#page_contents"
+                                        hx-swap="outerHTML"
+                                        value="GitProjects"
+                                >
+                                    GitHub Hosted Projects
+                                </button>
+                            </li>
+                            <!--<li>
+                                <a class="dropdown-item" href="https://github.com/tcclaviger/javatoyapps" target="_blank">Java Projects (GitHub)</a>
+                            </li>
+                            <li>
                                 <hr class="dropdown-divider">
                             </li>
                             <li>
-                                <a class="dropdown-item" href="https://github.com/tcclaviger/ChillerControl/blob/main/ChillerControl%20v1" target="_blank">Microcontroller Projects (github)</a>
-                            </li>
+                                <a class="dropdown-item" href="https://github.com/tcclaviger/ChillerControl/blob/main/ChillerControl%20v1" target="_blank">Microcontroller Projects (GitHub)</a>
+                            </li>-->
                         </ul>
                     </div>
 
@@ -190,9 +203,16 @@
 
 <div class="container mt-5 pt-3">
     <div id="page_contents" hx-boost="true">
-        <div class="row justify-content-center justify-content-md-around mt-4" style="overflow: hidden;">
+        <div class="row justify-content-center justify-content-md-around mt-4" >
             <img class="col-12 col-md-6 col-lg-4 img-fluid" src="/images/me.png" alt="Picture of Rob Smith" id="myPic">
+
             <article class="col-11 m-5 col-md-11 col-lg-11 card textCard">
+                <div class="card col-12 picCard" id="picOfOly">
+                    <p class="card-title text-center">Olympia, WA 17-23</p>
+                    <img
+                        class="card-body" src="/images/Olympia.jpg"
+                        alt="Picture of Olympia, WA from above the capitol building.">
+                </div>
                 <div class="card-body text-left d-inline-block">
                     <p>I am a 3rd year student in the Green River College Software Development BAS
                         program graduating in June 2025. I am very excited to join a team of forward-thinking
@@ -205,12 +225,15 @@
                     </p>
                 </div>
             </article>
-            <div class="card col-11 picCard" id="picOfOly"><p class="card-title text-center">Olympia, WA 17-23</p><img
-                    class="card-body" src="/images/Olympia.jpg"
-                    alt="Picture of Olympia, WA from above the capitol building."></div>
+
             <article class="col-11 m-5 col-md-11 col-lg-11 card textCard">
+                <div class="card col-12 picCard" id="picOfIdar">
+                    <p class="card-title text-center">Idar-Oberstein, Germany 00-07</p>
+                    <img src="/images/Idar-Oberstein.jpg"
+                                  alt="Picture of Idar-Oberstein Germany including Strassburg Kaserne."
+                ></div>
                 <div class="card-body text-left d-inline-block">
-                    <p>I am a retired Army veteran with 21 years of service; 5 years deployed to
+                    <p>I retired from the Army with 21 years of service; 5 years deployed to
                         various locations. I've worked at all levels of the Intelligence field, tactical, operational,
                         and strategic. Some of my time was spent running regionally aligned programs in direct support
                         of
@@ -218,10 +241,11 @@
                     </p>
                 </div>
             </article>
-            <div class="card col-11 picCard" id="picOfIdar"><p class="card-title text-center">Idar-Oberstein, Germany
-                00-07</p><img src="/images/Idar-Oberstein.jpg"
-                              alt="Picture of Idar-Oberstein Germany including Strassburg Kaserne."></div>
             <article class="col-11 m-5 col-md-11 col-lg-11 card textCard">
+             <div class="card col-12 picCard">
+                    <p class="card-title text-center">San Diego, CA 84-99</p>
+                    <img
+                    src="/images/SanDiego.jpg" alt="Picture of San Diego skyline at night."></div>
                 <div class="card-body text-left d-inline-block">
                     <p>My passion for technology started young at some of the amazing schools in San Diego. My first PC
                         in
@@ -232,10 +256,7 @@
                         calibration, web design, 3D modeling, CAD, additive manufacturing and more.
                     </p>
                 </div>
-            </article>
-            <div class="card col-11 picCard"><p class="card-title text-center">San Diego, CA 84-99</p><img
-                    src="/images/SanDiego.jpg" alt="Picture of San Diego skyline at night."></div>
-        </div>
+        </article>
         <div class="p-5 d-none d-md-block col-12"></div>
         <div class="p-3 d-block d-md-none col-12"></div>
     </div>
@@ -257,5 +278,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+</div>
 </body>
 </html>

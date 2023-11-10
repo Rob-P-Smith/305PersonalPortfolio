@@ -78,6 +78,7 @@ body{
 .picCard{
     border: none;
     background-color: transparent;
+    filter: drop-shadow(.5rem .5rem 5px black);
 }
 .picCard p{
     font-size: 16px;
