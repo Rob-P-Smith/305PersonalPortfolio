@@ -30,7 +30,7 @@
                         Projects
                     </a>S
                     <ul class="dropdown-menu dropdown-menu-end">
-                         <li>
+                        <li>
                             <button class="dropdown-item"
                                     name="actionTrigger"
                                     type="submit"
@@ -54,89 +54,116 @@
                                 Web Projects
                             </button>
                         </li>
-                        <button class="dropdown-item"
-                                name="actionTrigger"
-                                type="submit"
-                                hx-post="PHP/control.php"
-                                hx-target="#page_contents"
-                                hx-swap="outerHTML"
-                                value="GitProjects"
-                        >
-                            GitHub Hosted Projects
-                        </button>
+
+                        <li>
+                            <button class="dropdown-item"
+                                    name="actionTrigger"
+                                    type="submit"
+                                    hx-post="PHP/control.php"
+                                    hx-target="#page_contents"
+                                    hx-swap="outerHTML"
+                                    value="GitProjects"
+                            >
+                                GitHub Hosted Projects
+                            </button>
+                        </li>
+                        <li>
+                            <button class="dropdown-item"
+                                    name="actionTrigger"
+                                    type="submit"
+                                    hx-post="PHP/control.php"
+                                    hx-target="#page_contents"
+                                    hx-swap="outerHTML"
+                                    value="guestBook"
+                            >
+                                Guestbook
+                            </button>
+                        </li>
                     </ul>
                 </div>
 
                 <!--Mobile View Dropdown Menu-->
-                    <div class="dropdown-menu-end d-flex d-md-none">
-                        <a class="nav-link btn btn-secondary dropdown-toggle projectsDropdown" href="#" role="button"
-                           data-bs-toggle="dropdown"
-                           aria-expanded="false">
-                            Navigation
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                            <li>
-                                <button class="dropdown-item"
-                                   name="actionTrigger"
-                                   type="submit"
-                                   hx-post="PHP/control.php"
-                                   hx-target="#page_contents"
-                                   hx-swap="outerHTML"
-                                   value="Resume"
-                                   >
-                                   Resume
-                                </button>
-                            </li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li>
-                                <button class="dropdown-item"
-                                        name="actionTrigger"
-                                        type="submit"
-                                        hx-post="PHP/control.php"
-                                        hx-target="#page_contents"
-                                        hx-swap="outerHTML"
-                                        value="librarianProj"
-                                >
-                                    Librarian Dashboard
-                                </button>
-                            </li>
-                            <li>
-                                <button class="dropdown-item"
+                <div class="dropdown-menu-end d-flex d-md-none">
+                    <a class="nav-link btn btn-secondary dropdown-toggle projectsDropdown" href="#" role="button"
+                       data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Navigation
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li>
+                            <button class="dropdown-item"
+                                    name="actionTrigger"
+                                    type="submit"
+                                    hx-post="PHP/control.php"
+                                    hx-target="#page_contents"
+                                    hx-swap="outerHTML"
+                                    value="Resume"
+                            >
+                                Resume
+                            </button>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <button class="dropdown-item"
+                                    name="actionTrigger"
+                                    type="submit"
+                                    hx-post="PHP/control.php"
+                                    hx-target="#page_contents"
+                                    hx-swap="outerHTML"
+                                    value="librarianProj"
+                            >
+                                Librarian Dashboard
+                            </button>
+                        </li>
+                        <li>
+                            <button class="dropdown-item"
                                     name="actionTrigger"
                                     type="submit"
                                     hx-post="PHP/control.php"
                                     hx-target="#page_contents"
                                     hx-swap="outerHTML"
                                     value="WebProjects"
-                                    >
-                                    Web Projects
-                                </button>
-                            </li>
-                            <li>
-                                <button class="dropdown-item"
-                                        name="actionTrigger"
-                                        type="submit"
-                                        hx-post="PHP/control.php"
-                                        hx-target="#page_contents"
-                                        hx-swap="outerHTML"
-                                        value="GitProjects"
-                                >
-                                    GitHub Hosted Projects
-                                </button>
-                            </li>
-                            <!--<li>
-                                <a class="dropdown-item" href="https://github.com/tcclaviger/javatoyapps" target="_blank">Java Projects (GitHub)</a>
-                            </li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="https://github.com/tcclaviger/ChillerControl/blob/main/ChillerControl%20v1" target="_blank">Microcontroller Projects (GitHub)</a>
-                            </li>-->
-                        </ul>
-                    </div>
+                            >
+                                Web Projects
+                            </button>
+                        </li>
+                        <li>
+                            <button class="dropdown-item"
+                                    name="actionTrigger"
+                                    type="submit"
+                                    hx-post="PHP/control.php"
+                                    hx-target="#page_contents"
+                                    hx-swap="outerHTML"
+                                    value="GitProjects"
+                            >
+                                GitHub Hosted Projects
+                            </button>
+                        </li>
+                        <li>
+                            <button class="dropdown-item"
+                                    name="actionTrigger"
+                                    type="submit"
+                                    hx-post="PHP/control.php"
+                                    hx-target="#page_contents"
+                                    hx-swap="outerHTML"
+                                    value="guestBook"
+                            >
+                                Guestbook
+                            </button>
+                        </li>
+                        <!--<li>
+                            <a class="dropdown-item" href="https://github.com/tcclaviger/javatoyapps" target="_blank">Java Projects (GitHub)</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="https://github.com/tcclaviger/ChillerControl/blob/main/ChillerControl%20v1" target="_blank">Microcontroller Projects (GitHub)</a>
+                        </li>-->
+                    </ul>
+                </div>
 
                 <!--Standard Nav Bar Links-->
                 <button class="nav-link d-none d-md-inline"
@@ -152,7 +179,7 @@
                 <a class="nav-link" href="https://www.linkedin.com/in/robert-patrick-smith-"
                    target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
                     </svg>
                 </a>
                 <button type="button"
@@ -167,14 +194,14 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="contactModalLabel">Send Email Message</h1>
+                                <h1 class="modal-title fs-5" id="contactModalLabel">Leave Guest Message</h1>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <div class="modal-body" hx-boost="true">
+                            <div class="modal-body" id="replaceModal" hx-boost="true">
                                 <form method="post" action="PHP/message.php">
                                     <div id="mailModal">
                                         <div class="mb-2">
-                                            <label for="recipient-email" class="col-form-label">Email:</label>
+                                            <label for="recipient-email" class="col-form-label">Contact Email:</label>
                                             <input type="text" class="form-control formFieldStyles" id="recipient-email"
                                                    name="recipient-email" required>
                                         </div>
@@ -184,13 +211,16 @@
                                                       name="message-text" required></textarea>
                                         </div>
                                     </div>
-                                        <button type="button" class="btn modal-button" data-bs-dismiss="modal">Close
-                                        </button>
-                                        <button type="submit"
-                                                class="btn modal-button"
-                                                data-bs-dismiss="modal">
-                                                Send message
-                                        </button>
+                                    <button type="button" class="btn modal-button" data-bs-dismiss="modal">Close
+                                    </button>
+                                    <button type="submit"
+                                            class="btn modal-button"
+                                            name="actionTrigger"
+                                            hx-post="PHP/message.php"
+                                            hx-target="#replaceModal"
+                                            hx-swap="outerHTML"
+                                            value="MessageSubmit"
+                                    > Submit Message </button>
                                 </form>
                             </div>
                         </div>
@@ -210,8 +240,8 @@
                 <div class="card col-12 picCard" id="picOfOly">
                     <p class="card-title text-center">Olympia, WA 17-23</p>
                     <img
-                        class="card-body" src="/images/Olympia.jpg"
-                        alt="Picture of Olympia, WA from above the capitol building.">
+                            class="card-body" src="/images/Olympia.jpg"
+                            alt="Picture of Olympia, WA from above the capitol building.">
                 </div>
                 <div class="card-body text-left d-inline-block">
                     <p>I am a 3rd year student in the Green River College Software Development BAS
@@ -230,8 +260,8 @@
                 <div class="card col-12 picCard" id="picOfIdar">
                     <p class="card-title text-center">Idar-Oberstein, Germany 00-07</p>
                     <img src="/images/Idar-Oberstein.jpg"
-                                  alt="Picture of Idar-Oberstein Germany including Strassburg Kaserne."
-                ></div>
+                         alt="Picture of Idar-Oberstein Germany including Strassburg Kaserne."
+                    ></div>
                 <div class="card-body text-left d-inline-block">
                     <p>I retired from the Army with 21 years of service; 5 years deployed to
                         various locations. I've worked at all levels of the Intelligence field, tactical, operational,
@@ -242,10 +272,10 @@
                 </div>
             </article>
             <article class="col-11 m-5 col-md-11 col-lg-11 card textCard">
-             <div class="card col-12 picCard">
+                <div class="card col-12 picCard">
                     <p class="card-title text-center">San Diego, CA 84-99</p>
                     <img
-                    src="/images/SanDiego.jpg" alt="Picture of San Diego skyline at night."></div>
+                            src="/images/SanDiego.jpg" alt="Picture of San Diego skyline at night."></div>
                 <div class="card-body text-left d-inline-block">
                     <p>My passion for technology started young at some of the amazing schools in San Diego. My first PC
                         in
@@ -256,28 +286,28 @@
                         calibration, web design, 3D modeling, CAD, additive manufacturing and more.
                     </p>
                 </div>
-        </article>
-        <div class="p-5 d-none d-md-block col-12"></div>
-        <div class="p-3 d-block d-md-none col-12"></div>
-    </div>
-</div>
-
-<footer>
-    <nav class="navbar fixed-bottom" id="nav-bottom">
-        <div class="container justify-content-evenly g-0 d-none d-md-block">
-            <p class="text-center"><em>I need you to think of solutions to problems we haven’t seen yet. I want
-                you to try things that no one has ever tried because they’re absolutely stupid.</em> - <b>Ender Wiggins
-                from Ender's Game</b>
-            </p>
+            </article>
+            <div class="p-5 d-none d-md-block col-12"></div>
+            <div class="p-3 d-block d-md-none col-12"></div>
         </div>
-    </nav>
-</footer>
-<!--HTMX Include-->
-<script src="https://unpkg.com/htmx.org@1.9.7"></script>
-<!--Bootstrap Include-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+    </div>
+
+    <footer>
+        <nav class="navbar fixed-bottom" id="nav-bottom">
+            <div class="container justify-content-evenly g-0 d-none d-md-block">
+                <p class="text-center"><em>I need you to think of solutions to problems we haven’t seen yet. I want
+                    you to try things that no one has ever tried because they’re absolutely stupid.</em> - <b>Ender Wiggins
+                    from Ender's Game</b>
+                </p>
+            </div>
+        </nav>
+    </footer>
+    <!--HTMX Include-->
+    <script src="https://unpkg.com/htmx.org@1.9.7"></script>
+    <!--Bootstrap Include-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
 </div>
 </body>
 </html>

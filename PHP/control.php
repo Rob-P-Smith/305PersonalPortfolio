@@ -1,6 +1,44 @@
 <?php
+
+//DB FETCHING FOR GUESTBOOK DISPLAY
+include('/home/rsmithsg/db/db_connect_rob.php');
+$sql = "SELECT * FROM `guests`;";
+$result = @mysqli_query($conn, $sql);
+
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
     $request=$_POST['actionTrigger'];
+
+    //GUESTBOOK PAGE
+    $guestbookentries="";
+    while ($row = mysqli_fetch_assoc($result)) {
+        if($row['visFlag']==1){
+            $guestbookentries.='
+            <p><strong>From:</strong></p><p>'.$row['email'].'</p>
+            <p><strong>Message:</strong></p><p>'.$row['message'].'</p>
+            <hr>'
+            ;
+        }
+
+    }
+
+    $guestbook = '<div class="container col-12 pb-1 mt-4" id="page_contents" hx-boost="true">
+        <div class="d-flex row">
+            <div class=""><h1 class="text-center fw-semibold">Guest Book</h1></div>
+        </div>
+        <div class="row justify-content-center justify-content-md-around" style="overflow: hidden;">
+            <article class="col-12 m-2 col-md-10 col-lg-8 card textCard">
+                <div class="card-title text-center"><h3>Guest Messages</h3></div>
+                <div class="card-body text-left d-inline-block">
+                <hr>
+                '.$guestbookentries.'
+                </div>
+            </article>
+        </div>
+        <div class="p-5 d-none d-md-block col-12"></div>
+        <div class="p-3 d-block d-md-none col-12"></div>
+    </div>';
+
+    //RESUMEPAGE
     $resume = '<div class="container col-11 pb-1 mt-4" id="page_contents" hx-boost="true">
             <div class="d-flex row">
             <div class="col-11 col-lg-9"><h1 class="text-left '.'fw-semibold">Robert Smith</h1></div>
@@ -218,13 +256,15 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
                     </div>
                 </div>
             </div>
-            </div>';;
-    $webProjects = '<div class="container col-11 pb-1 mt-4" id="page_contents" hx-boost="true">
+            </div>';
+
+    //WEBPROJECTS PAGE
+    $webProjects = '<div class="container col-12 pb-1 mt-4" id="page_contents" hx-boost="true">
         <div class="d-flex row">
             <div class=""><h1 class="text-center fw-semibold">Web Projects</h1></div>
         </div>
         <div class="row justify-content-center justify-content-md-around" style="overflow: hidden;">
-            <article class="col-11 m-2 col-md-10 col-lg-8 card textCard">
+            <article class="col-12 m-2 col-md-10 col-lg-8 card textCard">
                 <div class="card-title text-center"><h3>Nursing Nucleus Portal</h3></div>
                 <div class="card-body text-left d-inline-block">
                         <hr>
@@ -249,12 +289,12 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
         <div class="p-5 d-none d-md-block col-12"></div>
         <div class="p-3 d-block d-md-none col-12"></div>
     </div>';
-    $librarianProj ='<div class="container col-11 pb-1 mt-4" id="page_contents" hx-boost="true">
+    $librarianProj ='<div class="container col-12 pb-1 mt-4" id="page_contents" hx-boost="true">
         <div class="d-flex row">
             <div class=""><h1 class="text-center fw-semibold">Dashboard Projects</h1></div>
-            <hr>
+            </div>
                   <div class="row justify-content-center justify-content-md-around" style="overflow: hidden;">
-            <article class="col-11 m-2 col-md-11 col-lg-11 card textCard">
+            <article class="col-12 m-2 col-md-11 col-lg-11 card textCard">
                 <div class="card-title text-center"><h3>Librarian PowerBI Portal</h3></div>
                 <div class="card-body text-left d-inline-block">
                         <hr>
@@ -274,12 +314,13 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
                 </div>
             </article>
         </div>
-            
         </div>
         <div class="p-5 d-none d-md-block col-12"></div>
         <div class="p-3 d-block d-md-none col-12"></div>
     </div>';
-    $gitProjects ='<div class="container col-11 pb-1 mt-4" id="page_contents" hx-boost="true">
+
+    //GIT PROJECTS PAGE
+    $gitProjects ='<div class="container col-12 pb-1 mt-4" id="page_contents" hx-boost="true">
         <div class="d-flex row">
             <div class=""><h1 class="text-center fw-semibold">Java and C Projects</h1></div>
             <hr>
@@ -342,7 +383,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
                 </li>
                 <li>
                 Used for controlling a remote switchable power strip to cycle a water-chiller on and off. I use this to
-                cool my desktop PC and keep the coolant at 2° Fahrenheit above the current dew point in my office.
+                cool my desktop PC and keep the coolant at 2�� Fahrenheit above the current dew point in my office.
                 </li>
                 <li>
                 <p>Code Sample:</p>
@@ -396,5 +437,15 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
         case 'WebProjects': echo $webProjects;break;
         case 'librarianProj': echo $librarianProj;break;
         case 'GitProjects': echo $gitProjects;break;
-        }
+        case 'guestBook' : echo $guestbook;break;
+        case 'approve' :
+            $sql1 = "SELECT * FROM `guests`;";
+            $result2 = @mysqli_query($conn, $sql1);
+            $code = $_POST['code-input'];
+
+            $sql2="UPDATE `guests` SET `visFlag` = 1 WHERE `extra` = '$code';";
+            $found = mysqli_query($conn, $sql2);
+            header("Location: https://rsmiths.greenriverdev.com/index.html"); ;
+            break;
+    }
 }
